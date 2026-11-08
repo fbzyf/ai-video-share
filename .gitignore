@@ -1,0 +1,4 @@
+agent-tools/
+.cursor/
+.DS_Store
+*.log

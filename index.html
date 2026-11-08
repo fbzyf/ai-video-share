@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>从一个想法到成片 · 约70秒讲解</title>
+    <meta
+      name="description"
+      content="一条约70秒的竖屏讲解视频：用导演、画师、动画师三个帮手，从想法做到成片。可在线播放，也可下载转发。"
+    />
+    <meta property="og:title" content="从一个想法到成片 · 约70秒讲解" />
+    <meta
+      property="og:description"
+      content="竖屏讲解视频，手机浏览器即可打开，无需登录。"
+    />
+    <meta property="og:image" content="cover.jpg" />
+    <meta property="og:type" content="video.other" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="cover.jpg" />
+    <style>
+      :root {
+        --bg: #050505;
+        --text: #f6f3ec;
+        --muted: #b8b3a8;
+        --accent: #ff7a45;
+        --accent-press: #ff9a70;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+        background: var(--bg);
+        color: var(--text);
+        font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC",
+          "Microsoft YaHei", system-ui, sans-serif;
+      }
+
+      body {
+        min-height: 100dvh;
+        display: flex;
+        justify-content: center;
+      }
+
+      main {
+        width: min(100%, 430px);
+        min-height: 100dvh;
+        padding: max(16px, env(safe-area-inset-top)) 16px
+          calc(20px + env(safe-area-inset-bottom));
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 1.35rem;
+        line-height: 1.35;
+        letter-spacing: 0.02em;
+      }
+
+      header p {
+        margin: 6px 0 0;
+        color: var(--muted);
+        font-size: 0.92rem;
+        line-height: 1.5;
+      }
+
+      .player {
+        flex: 1 1 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 0;
+      }
+
+      video {
+        display: block;
+        width: 100%;
+        max-height: calc(100dvh - 210px);
+        aspect-ratio: 9 / 16;
+        object-fit: contain;
+        background: #000;
+        border-radius: 16px;
+        border: 1px solid #222;
+      }
+
+      .download {
+        display: block;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: #1a0f0a;
+        background: var(--accent);
+        font-weight: 700;
+        font-size: 1.08rem;
+        letter-spacing: 0.06em;
+        padding: 15px 18px;
+        border-radius: 999px;
+        box-shadow: 0 8px 24px rgba(255, 122, 69, 0.28);
+      }
+
+      .download:hover,
+      .download:focus-visible {
+        background: var(--accent-press);
+      }
+
+      .download:active {
+        transform: translateY(1px);
+      }
+
+      footer {
+        color: #7d786f;
+        font-size: 0.78rem;
+        text-align: center;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>从一个想法到成片</h1>
+        <p>约 70 秒竖屏讲解。手机直接播放，也可下载转发。</p>
+      </header>
+
+      <!-- 9:16 成片，封面作海报，iOS 用 playsinline 在页内播放 -->
+      <div class="player">
+        <video
+          controls
+          playsinline
+          webkit-playsinline
+          preload="metadata"
+          poster="cover.jpg"
+          src="video.mp4"
+          title="从一个想法到成片"
+        >
+          当前浏览器不能播放视频，请点下面的按钮下载。
+        </video>
+      </div>
+
+      <a class="download" href="video.mp4" download="从一个想法到成片.mp4"
+        >下载视频</a
+      >
+
+      <footer>无需登录 · 整理自公开教程，方便发给别人打开</footer>
+    </main>
+  </body>
+</html>
