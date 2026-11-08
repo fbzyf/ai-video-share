@@ -31,8 +31,13 @@ python3 -m http.server 8000 --bind 127.0.0.1
 
 没有账号、没有后台、没有需要填写的参数。视频已经放在网页文件夹里，打开页面就会播放它。
 
+## 怎么发给别人
+
+1. 这个仓库已经开了 GitHub Pages，浏览器打开即可，不用登录：https://fbzyf.github.io/ai-video-share/
+2. 如果要用 Cursor Apps 再发一条链接：请在 [cursor.com/agents](https://cursor.com/agents) **选中本仓库** `fbzyf/ai-video-share` 再开一个 Cloud Agent（不要用「从零开始」），然后让它执行 `publish-app`（slug 建议 `ai-video-share`）。
+3. Cursor 的 Publish 对话框里必须选 **公开 / public**。选「仅自己 / private」的话，没有 Cursor 的人打不开。这个工具没法替你勾选。
+
 ## 使用注意
 
 - 用手机打开最合适，因为视频是竖屏。
 - 部分手机浏览器（尤其是微信内置浏览器）可能不会真正「下载」，这时可以长按视频，选保存或用系统分享。
-- 公开链接需要在 Cursor 的 Publish 对话框里选 **公开 / public**。选「仅自己」的话，没有 Cursor 的人打不开。
